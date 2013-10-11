@@ -4,6 +4,7 @@ all:
 
 serve:
 	@(git checkout gh-pages; \
+	rm -rf /tmp/sound4stack; \
 	cp -r ../sound4stack /tmp ; \
 	git checkout master ; \
 	cd /tmp/sound4stack ; \
