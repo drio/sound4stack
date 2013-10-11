@@ -14,6 +14,7 @@ update-pages: sound.v0.min.js
 	git checkout gh-pages; \
 	mv /tmp/sound*.js .; \
 	git commit -a -m 'Updating from master'; \
+	git push origin gh-pages;\
 	git checkout master)
 
 sound.v0.min.js: sound.v0.js
