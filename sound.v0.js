@@ -1,8 +1,7 @@
-var sound4stack = (function() {
+(function() {
   window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
   var n_slides   = d3.selectAll("section")[0].length,
-      _sound     = {},
       source,
       context    = new AudioContext(),
       bufferList = [],   // slide number -> buffer sound
@@ -76,5 +75,4 @@ var sound4stack = (function() {
       play(stack.position());
   });
 
-  return _sound;
 })();
